@@ -4,7 +4,7 @@ resource "aws_internet_gateway" "eks_igw" {
 
   tags = merge(
 
-    local.tags, { Name = "${var.project_name}-igw" }
+    var.tags, { Name = "${var.project_name}-igw" }
 
   )
 
@@ -20,7 +20,7 @@ resource "aws_route_table" "eks_public_route_table" {
 
   tags = merge(
 
-    local.tags, { Name = "${var.project_name}-pub_rtb" }
+    var.tags, { Name = "${var.project_name}-pub_rtb" }
 
   )
 }
@@ -35,7 +35,7 @@ resource "aws_route_table" "eks_private_route_table_1a" {
 
   tags = merge(
 
-    local.tags, { Name = "${var.project_name}-priv_rtb_1a" }
+    var.tags, { Name = "${var.project_name}-priv_rtb_1a" }
 
   )
 }
@@ -50,7 +50,7 @@ resource "aws_route_table" "eks_private_route_table_1b" {
 
   tags = merge(
 
-    local.tags, { Name = "${var.project_name}-priv_rtb_1b" }
+    var.tags, { Name = "${var.project_name}-priv_rtb_1b" }
 
   )
 }
