@@ -5,3 +5,10 @@ module "eks_network" {
   tags         = local.tags
 
 }
+
+module "eks_cluster_role" {
+  source       = "./modules/cluster"
+  project_name = var.project_name
+  tags         = local.tags
+
+}
