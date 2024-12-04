@@ -24,3 +24,10 @@ module "managed_node_group" {
   subnet_priv_1b = module.eks_network.subnet_priv_1b
 
 }
+
+module "eks_controller_policy" {
+  source       = "./modules/load-balancer-controller"
+  project_name = var.project_name
+  tags         = local.tags
+
+}
