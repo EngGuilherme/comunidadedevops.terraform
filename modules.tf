@@ -30,5 +30,6 @@ module "eks_controller_policy" {
   project_name = var.project_name
   tags         = local.tags
   oidc         = module.eks_cluster_role.oidc_identity
+  clusterName  = module.eks_cluster_role.cluster_name
 
 }

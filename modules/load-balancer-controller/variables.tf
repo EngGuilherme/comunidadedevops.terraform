@@ -10,5 +10,8 @@ variable "tags" {
 variable "oidc" {
   type        = string
   description = "HTTPS URL OIDC provider of the EKS Cluster"
-
+}
+variable "clusterName" {
+  type        = string
+  description = "EKS Cluster Name"
 }
