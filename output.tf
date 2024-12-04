@@ -16,3 +16,12 @@ output "eks_vpc_config" {
 output "oidc" {
   value = module.eks_cluster_role.oidc_identity
 }
+output "cluster_name" {
+  value = module.eks_cluster_role.cluster_name
+}
+output "cluster_endpoint" {
+  value = module.eks_cluster_role.cluster_endpoint
+}
+output "cluster_ca_cert" {
+  value = module.eks_cluster_role.cluster_ca_cert
+}
