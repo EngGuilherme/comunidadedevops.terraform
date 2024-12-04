@@ -7,3 +7,8 @@ variable "tags" {
   type        = map(any)
   description = "Tags to be added to AWS resources"
 }
+variable "oidc" {
+  type        = string
+  description = "HTTPS URL OIDC provider of the EKS Cluster"
+
+}

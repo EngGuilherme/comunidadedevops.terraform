@@ -14,5 +14,5 @@ output "eks_vpc_config" {
   value = module.eks_cluster_role.eks_vpc_config
 }
 output "oidc" {
-  value = module.eks_cluster_role.oidc
+  value = module.eks_cluster_role.oidc_identity
 }
