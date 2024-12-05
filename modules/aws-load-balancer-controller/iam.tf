@@ -1,6 +1,6 @@
 
 resource "aws_iam_role" "eks_controller_role" {
-  name = "${var.project_name}-load-balancer-role"
+  name = "${var.project_name}-aws-load-balancer-controller"
 
 
   assume_role_policy = <<EOF
